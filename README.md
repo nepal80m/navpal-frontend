@@ -1,4 +1,8 @@
-# Welcome to your Expo app 👋
+# Welcome to your NavPal Mobile app 👋
+
+Backend Repo: [NavPal Backend](https://github.com/nepal80m/navpal-backend)
+
+![App Preview]('./screenshot.jpeg')
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
