@@ -9,12 +9,21 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "Audio.setAudioModeAsync": "Please?",
+        "NSMicrophoneUsageDescription": "We need your permission to use the microphone for voice commands."
+      }
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+      "permissions": [
+        "AUDIO_RECORD",
+        "Audio.requestPermissionsAsync"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKeys": ""
+        }
       }
     },
     "web": {
@@ -36,6 +45,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "eb296aed-f789-4b74-9fc8-87aa71592f36"
+      }
     }
   }
 }
